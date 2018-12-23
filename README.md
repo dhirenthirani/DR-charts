@@ -3,7 +3,7 @@ dr-charts
 
 Easy to use ,customizable and Interactive charts library for iOS in Objective-C
 
-####Features:
+#### Features:
 * Line / Multiple lines / Lines Parallel To X and Y -Axis
 * Circular Charts
 * Vertical Bar Charts
@@ -22,12 +22,12 @@ Easy to use ,customizable and Interactive charts library for iOS in Objective-C
 ![LineChart](https://raw.githubusercontent.com/Zomato/DR-charts/master/art/LineChart.gif) ![BarChart](https://raw.githubusercontent.com/Zomato/DR-charts/master/art/BarChart.gif) ![PieChart](https://raw.githubusercontent.com/Zomato/DR-charts/master/art/PieChart.gif) ![HorizontalStackChart](https://raw.githubusercontent.com/Zomato/DR-charts/master/art/HorizontalStackChart.gif) ![CircularChart](https://raw.githubusercontent.com/Zomato/DR-charts/master/art/CircularChart.gif) 
 
 
-####CHART TYPE
+#### CHART TYPE
 ##### Line Chart
 
 This is an example of Line Chart:
 
-######Set Properties
+###### Set Properties
 ```objc
 pragma Mark CreateLineGraph
 - (void)createLineGraph{
@@ -58,7 +58,7 @@ pragma Mark CreateLineGraph
     [self.view addSubview:graph];
 }
 ```
-######Set DataSource
+###### Set DataSource
 ```objc
 #pragma mark MultiLineGraphViewDataSource
 - (NSMutableArray *)xDataForLineToBePlotted{
@@ -141,7 +141,7 @@ pragma Mark CreateLineGraph
     return [[NSMutableArray alloc] init];
 }
 ```
-######Set Delegate
+###### Set Delegate
 ```objc
 #pragma mark MultiLineGraphViewDelegate
 - (void)didTapWithValuesAtX:(NSString *)xValue valuesAtY:(NSString *)yValue{
@@ -153,7 +153,7 @@ pragma Mark CreateLineGraph
 
 This is an example of a Bar Chart:
 
-######Set Properties
+###### Set Properties
 ```objc
 #pragma Mark CreateHorizontalChart
 - (void)createBarChart{
@@ -179,7 +179,7 @@ This is an example of a Bar Chart:
     [self.view addSubview:barChartView];
 }
 ```
-######Set DataSource
+###### Set DataSource
 ```objc
 #pragma mark BarChartDataSource
 - (NSMutableArray *)xDataForBarChart{
@@ -218,7 +218,7 @@ This is an example of a Bar Chart:
     return array;
 }
 ```
-######Set Delegate
+###### Set Delegate
 ```objc
 #pragma mark BarChartDelegate
 - (void)didTapOnBarChartWithValue:(NSString *)value{
@@ -230,7 +230,7 @@ This is an example of a Bar Chart:
 
 This is an example of Pie Chart
 
-######Set Properties
+###### Set Properties
 ```objc
 #pragma Mark CreatePieChart
 - (void)createPieChart{
@@ -249,7 +249,7 @@ This is an example of Pie Chart
     [self.view addSubview:chart];
 }
 ```
-######Set DataSource
+###### Set DataSource
 ```objc
 #pragma mark PieChartDataSource
 - (NSInteger)numberOfValuesForPieChart{
@@ -272,7 +272,7 @@ This is an example of Pie Chart
     return [NSNumber numberWithLong:random() % 100];
 }
 ```
-######Set Delegate
+###### Set Delegate
 ```objc
 #pragma mark PieChartDelegate
 - (void)didTapOnPieChartWithValue:(NSString *)value{
@@ -284,7 +284,7 @@ This is an example of Pie Chart
 
 This is an example of Horizontal Stack Chart
 
-######Set Properties
+###### Set Properties
 ```objc
 #pragma Mark CreateHorizontalChart
 - (void)createHorizontalStackChart{
@@ -303,7 +303,7 @@ This is an example of Horizontal Stack Chart
     [self.view addSubview:chartView];
 }
 ```
-######Set DataSource
+###### Set DataSource
 ```objc
 #pragma mark HorizontalStackBarChartDataSource
 - (NSInteger)numberOfValuesForStackChart{
@@ -326,7 +326,7 @@ This is an example of Horizontal Stack Chart
     return [NSNumber numberWithLong:random() % 100];
 }
 ```
-######Set Delegate
+###### Set Delegate
 ```objc
 #pragma mark HorizontalStackBarChartDelegate
 - (void)didTapOnHorizontalStackBarChartWithValue:(NSString *)value{
@@ -338,7 +338,7 @@ This is an example of Horizontal Stack Chart
 
 This is an example of Circular Chart
 
-######Set Properties
+###### Set Properties
 ```objc
 #pragma Mark CreatePieChart
 - (void)createCircularChart{
@@ -357,7 +357,7 @@ This is an example of Circular Chart
     [self.view addSubview:chart];
 }
 ```
-######Set DataSource
+###### Set DataSource
 ```objc
 #pragma mark CircularChartDataSource
 - (CGFloat)strokeWidthForCircularChart{
@@ -384,7 +384,7 @@ This is an example of Circular Chart
     return [NSNumber numberWithLong:random() % 100];
 }
 ```
-######Set Delegate
+###### Set Delegate
 ```objc
 #pragma mark CircularChartDelegate
 - (void)didTapOnCircularChartWithValue:(NSString *)value{
